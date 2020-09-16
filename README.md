@@ -57,21 +57,16 @@ After solving all the instances(easy, medium, hard) I have performed an analysis
 
 ### Easy Matrices
 |   Searcher          |	Successor States | Goal Tests	| States Traversed	| Time Taken |
+| :-----------------: | :--------------: | :--------: | :--------------: | :--------: |
 |  Breadth-First      |	     119753      |	   119754  |	      119753     |	   8.0980  |
 | 	Depth-First        |       25171      |     25172  |        25188     |	   1.6906  |
 | 	Depth-Limited      |       85069      |     85070 	|        85083    	|    5.8156  |
 | Iterative Deepening	|     3546192	     |   3665946 	|      3665905    	|   34.855   |
 
-Searcher	Successor States	Goal Tests	States Traversed	Time Taken
-Breadth-First	119753	119754	119753	8.098
-Depth-First	25171	25172	25188	1.6906
-Depth-Limited	85069	85070	85083	5.8156
-Iterative Deepening	3546192	3665946	3665905	34.855
-
-
 
 ### Medium Matrices
 |   Searcher          |	Successor States | Goal Tests	| States Traversed	| Time Taken |
+| :-----------------: | :--------------: | :--------: | :--------------: | :--------: |
 |  Breadth-First      |	     143923      |	   143924  |	      143923     |	  10.0229  |
 | 	Depth-First        |       34741      |     34742  |        34758     |	   2.5125  |
 | 	Depth-Limited      |      118807      |    118808 	|       118822    	|    7.9047  |
@@ -82,12 +77,14 @@ Iterative Deepening	3546192	3665946	3665905	34.855
 ### Hard Matrices
 
 |   Searcher          |	Successor States | Goal Tests	| States Traversed	| Time Taken |
+| :-----------------: | :--------------: | :--------: | :--------------: | :--------: |
 |  Breadth-First      |	     441027      |	   441028  |	      441027     |	  30.7734  |
 | 	Depth-First        |       92106      |     92107  |        92122     |	   6.4562  |
 | 	Depth-Limited      |      348978      |    348979 	|       348994    	|   24.8718  |
 | Iterative Deepening	|    13051713	     |  13492742 	|     13492701    	|  859.0561  |
 
-NOTE:- IDS for Medium and Hard Matrices took too long to process, so the results are from a dataset of length 10. The rest of the searches are implemented for datasets  of length 34.
+#### NOTE:
+IDS for Medium and Hard Matrices took too long to process, so the results are from a dataset of length 10. The rest of the searches are implemented for datasets  of length 34.
 
 
 
