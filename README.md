@@ -1,6 +1,6 @@
 # Sudoku_Solver
 Modification of the aima-python/search.py to solve sudoku and analyse different algorithms
-#a)	Formulation of the Sudoku problem.
+# Formulation of the Sudoku problem.
 
 1.	Initial State :– 
 A list of numbers representing the sudoku matrix. It contains numbers from 0 to 9, with zero representing the blank or unfilled cells. The numbers are filled based on the Sudoku Rule*.
@@ -24,18 +24,18 @@ So it could be unit cost for every move.
 
 
 
-#b)	Formulation of the problem in Python.
+# Formulation of the problem in Python.
 
 The python program is attached in this current folder as sudoku.py.
 
-#c)	Creation of Instances (Difficulty = [Easy, Medium, Hard])
+# Creation of Instances (Difficulty = [Easy, Medium, Hard])
 To generate instances I have used createInstances.py which takes the values in the sudoku.csv file and pre-processes it to satisfy input state format. It also classifies the inputs based on their difficulty and assigns the lists into three categories:-
 i.	Easy
 ii.	Medium
 iii.	Hard
 
 
-#d)	Solving the instances using the basic search strategies.
+# Solving the instances using the basic search strategies.
 •	Breadth-First Search
 •	Depth-First Search
 •	Depth
@@ -52,10 +52,10 @@ Fig 2. The depth limited search yields an error when the depth limit is 53
 
 
 
-#e)	Performing Empirical Analysis
+# Performing Empirical Analysis
 After solving all the instances(easy, medium, hard) I have performed an analysis which gives us the statistics of how many number of successor nodes, number of goal tests, number of states that are generated for a problem in the dataset.
 
-Easy Matrices
+## Easy Matrices
 Searcher	Successor States	Goal Tests	States Traversed	Time Taken
 Breadth-First	119753	119754	119753	8.098
 Depth-First	25171	25172	25188	1.6906
@@ -64,7 +64,7 @@ Iterative Deepening	3546192	3665946	3665905	34.855
 
 
 
-Medium Matrices
+## Medium Matrices
 Searcher	Successor States	Goal Tests	States Traversed	Time Taken
 Breadth-First	143923	143924	143923	10.023
 Depth-First	34741	34742	34758	2.5125
@@ -73,7 +73,7 @@ Iterative Deepening	3951956	3951957	3951994	534.5674
 
 
 
-Hard Matrices
+## Hard Matrices
 Searcher	Successor States	Goal Tests	States Traversed	Time Taken
 Breadth-First	441027	441028	441027	30.7734
 Depth-First	92106	92107	92122	6.45625
@@ -87,7 +87,7 @@ NOTE:- IDS for Medium and Hard Matrices took too long to process, so the results
 
 
 
-#f)	Ideas for going beyond basic search strategies.
+# Ideas for going beyond basic search strategies.
 In my opinion, what we can do for optimising this sudoku problem is that, we can prioritize the cells of a state and fill the cell with the highest priority. With the priority going to the cell with the least number of possible values.
 
 
