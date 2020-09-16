@@ -2,22 +2,22 @@
 Modification of the aima-python/search.py to solve sudoku and analyse different algorithms
 ## Formulation of the Sudoku problem.
 
-1.	Initial State :– 
+**1.	Initial State :– **
 A list of numbers representing the sudoku matrix. It contains numbers from 0 to 9, with zero representing the blank or unfilled cells. The numbers are filled based on the Sudoku Rule*.
 
-2.	Goal Test:-
+**2.	Goal Test:-**
 If a state contains no blank or unfilled cells and the state follows the Sudoku Rule then it is a goal state.
 
-3.	Actions:-
+**3.	Actions:-**
 To select from a list of values that is a subset of [1..9] so that it does not violate the Sudoku Rule.
 Steps:-
-- 1.	Find the nearest unfilled cell.
+  1.	Find the nearest unfilled cell.
   2.	Make a list of possible values that can be filled.
 
-4.	Result
+**4.	Result:-**
 We will select one of the actions and fill the blank cell with it. This would be our next state in the search space.
 
-5.	Path Cost
+**5.	Path Cost:-**
 We do not require a path cost as our sole goal is to find out the goal state.
 So it could be unit cost for every move.
 
@@ -26,7 +26,6 @@ Sudoku Rule – That every row, column and a 3x3 sub-matrix (only the outer most
 
 
 ## Formulation of the problem in Python.
-
 The python program is attached in this current folder as [sudoku.py](./sudoku.py).
 
 ## Creation of Instances (Difficulty = [Easy, Medium, Hard])
@@ -47,11 +46,11 @@ For a given Sudoku matrix we can predict the limit for DLS by counting the total
 
 ![DLSError](./screenshots/err52.png)
 
-Fig 1. The depth limited search yields an error when the depth limit is 52
+   **Fig 1.** The depth limited search yields an error when the depth limit is 52.
 
 ![DLSValid](./screenshots/good53.png)
  
-Fig 2. The depth limited search yields an error when the depth limit is 53
+   **Fig 2.** The depth limited search yields an error when the depth limit is 53.
 
 
 
