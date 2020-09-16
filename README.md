@@ -27,22 +27,22 @@ Sudoku Rule – That every row, column and a 3x3 sub-matrix (only the outer most
 
 ## Formulation of the problem in Python.
 
-The python program is attached in this current folder as sudoku.py.
+The python program is attached in this current folder as [sudoku.py](./sudoku.py).
 
 ## Creation of Instances (Difficulty = [Easy, Medium, Hard])
 To generate instances I have used createInstances.py which takes the values in the sudoku.csv file and pre-processes it to satisfy input state format. It also classifies the inputs based on their difficulty and assigns the lists into three categories:-
-i.	Easy
-ii.	Medium
-iii.	Hard
+-	Easy
+-	Medium
+-	Hard
 
 
 ## Solving the instances using the basic search strategies.
-•	Breadth-First Search
-•	Depth-First Search
-•	Depth
--Limited Search
-•	Iterative Deepening Search
-Q- Is it possible to fix a reasonable limit a priori for Depth Limited Search?
+-	Breadth-First Search
+-	Depth-First Search
+-	Depth-Limited Search
+-	Iterative Deepening Search
+
+**Question- Is it possible to fix a reasonable limit a priori for Depth Limited Search?**
 For a given Sudoku matrix we can predict the limit for DLS by counting the total number of unfilled cells in our initial state. As seen in this example below 
 
  
