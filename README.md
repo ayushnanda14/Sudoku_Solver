@@ -11,8 +11,8 @@ If a state contains no blank or unfilled cells and the state follows the Sudoku 
 3.	Actions:-
 To select from a list of values that is a subset of [1..9] so that it does not violate the Sudoku Rule.
 Steps:-
-i.	Find the nearest unfilled cell.
-ii.	Make a list of possible values that can be filled.
+- 1.	Find the nearest unfilled cell.
+  2.	Make a list of possible values that can be filled.
 
 4.	Result
 We will select one of the actions and fill the blank cell with it. This would be our next state in the search space.
@@ -42,12 +42,14 @@ To generate instances I have used createInstances.py which takes the values in t
 -	Depth-Limited Search
 -	Iterative Deepening Search
 
-**Question- Is it possible to fix a reasonable limit a priori for Depth Limited Search?**
-For a given Sudoku matrix we can predict the limit for DLS by counting the total number of unfilled cells in our initial state. As seen in this example below 
+**Question- Is it possible to fix a reasonable limit a priori for Depth Limited Search?**<br />
+For a given Sudoku matrix we can predict the limit for DLS by counting the total number of unfilled cells in our initial state. As seen in this example below <br />
 
- 
+![DLSError](./screenshots/err52.png)
+
 Fig 1. The depth limited search yields an error when the depth limit is 52
 
+![DLSValid](./screenshots/good53.png)
  
 Fig 2. The depth limited search yields an error when the depth limit is 53
 
