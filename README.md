@@ -3,13 +3,14 @@
 ## Formulation of the Sudoku problem.
 
 **1.  Initial State:–**
-A list of numbers representing the sudoku matrix. It contains numbers from 0 to 9, with zero representing the blank or unfilled cells. The numbers are filled based on the Sudoku Rule*.
+A list of numbers representing the sudoku matrix. It contains numbers from 0 to 9, with zero representing the blank or unfilled cells. The numbers are filled based on the
+Sudoku Rule*.
 
 **2.	Goal Test:-**
 If a state contains no blank or unfilled cells and the state follows the Sudoku Rule then it is a goal state.
 
 **3.	Actions:-**
-To select from a list of values that is a subset of [1..9] so that it does not violate the Sudoku Rule.
+To select from a list of values that is a subset of [1..9] so that it does not violate the Sudoku Rule.<br />
 Steps:-
   1.	Find the nearest unfilled cell.
   2.	Make a list of possible values that can be filled.
@@ -28,8 +29,9 @@ Sudoku Rule – That every row, column and a 3x3 sub-matrix (only the outer most
 ## Formulation of the problem in Python.
 The python program is attached in this current folder as [sudoku.py](./sudoku.py).
 
-## Creation of Instances (Difficulty = [Easy, Medium, Hard])
-To generate instances I have used createInstances.py which takes the values in the sudoku.csv file and pre-processes it to satisfy input state format. It also classifies the inputs based on their difficulty and assigns the lists into three categories:-
+## Generation of Instances (Difficulty = [Easy, Medium, Hard])
+To generate instances I have used [generateInstances.py](./generateInstances.py) which takes the values in the sudoku.csv file and processes it to satisfy input state format. 
+It also classifies the inputs based on their difficulty and assigns the lists into three categories:-
 -	Easy
 -	Medium
 -	Hard
