@@ -5,7 +5,6 @@ Modification of the aima-python/search.py to solve sudoku and analyse different 
 1.	Initial State :– 
 A list of numbers representing the sudoku matrix. It contains numbers from 0 to 9, with zero representing the blank or unfilled cells. The numbers are filled based on the Sudoku Rule*.
 
-Note = Sudoku Rule – That every row, column and a 3x3 sub-matrix (only the outer most) should have only one occurrence of a number from the set [1..9].
 2.	Goal Test:-
 If a state contains no blank or unfilled cells and the state follows the Sudoku Rule then it is a goal state.
 
@@ -22,6 +21,8 @@ We will select one of the actions and fill the blank cell with it. This would be
 We do not require a path cost as our sole goal is to find out the goal state.
 So it could be unit cost for every move.
 
+#### *Note: 
+Sudoku Rule – That every row, column and a 3x3 sub-matrix (only the outer most) should have only one occurrence of a number from the set [1..9].
 
 
 ## Formulation of the problem in Python.
